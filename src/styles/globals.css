@@ -1,0 +1,172 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+/* Reset CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote,
+figure,
+dl,
+dd,
+dt {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+sup {
+  text-decoration: underline;
+}
+:focus {
+  outline: none;
+}
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-stroke {
+  -webkit-text-stroke: 0.5px white; /* Độ dày và màu viền chữ */
+  color: transparent;
+}
+.text-white {
+  color: #ffffff;
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+/* form contact */
+.icon-contact-form {
+  position: absolute;
+  top: 20%;
+  right: 2%;
+}
+.icon-contact-form-textarea {
+  position: absolute;
+  top: 47%;
+  right: 2%;
+}
+.message-errors-contact-form {
+  display: flex;
+  justify-content: flex-end;
+  color: #ff5252;
+  margin-bottom: 8px;
+}
+.message-errors-contact-form p {
+  margin-left: 10px;
+}
+.input-contact-form-error input {
+  border: 2px solid #ff5252 !important;
+}
+.input-contact-form-success input {
+  border: 2px solid #5cffae !important;
+}
+.textare-contact-form-error textarea {
+  border: 2px solid #ff5252 !important;
+}
+.textare-contact-form-success textarea {
+  border: 2px solid #5cffae !important;
+}
+/* carousel */
+.carousel-clients {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+.carousel-clients .swiper-button-prev {
+  left: 1px;
+  color: #fff;
+}
+.carousel-clients .swiper-button-next {
+  right: 1px;
+  color: #fff;
+}
+.carousel-clients .swiper-button-prev::after,
+.carousel-clients .swiper-button-next::after {
+  font-size: 28px !important;
+}
+@media (max-width: 640px) {
+  .carousel-clients .swiper-button-prev::after,
+  .carousel-clients .swiper-button-next::after {
+    font-size: 20px !important;
+  }
+  .carousel-clients {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
+}

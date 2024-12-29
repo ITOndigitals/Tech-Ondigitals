@@ -1,0 +1,26 @@
+.btn {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.6px;
+  width: fit-content;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #faf5ff;
+    border-radius: 50%;
+    top: -6px;
+    left: -20px;
+    opacity: 0.4;
+  }
+  &:hover {
+    &::after {
+      background-color: #dcc7ed;
+    }
+  }
+}

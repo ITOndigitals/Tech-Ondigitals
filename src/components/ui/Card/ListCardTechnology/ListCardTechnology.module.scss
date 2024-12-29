@@ -1,0 +1,33 @@
+.list-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #fff;
+  }
+  &__main {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    &__image {
+      position: relative;
+      width: 150px;
+      height: 125px;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .list-card {
+    &__title {
+      text-align: center;
+    }
+    &__main {
+      justify-content: center;
+    }
+  }
+}

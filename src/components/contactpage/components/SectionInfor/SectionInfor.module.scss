@@ -1,0 +1,102 @@
+.section-contact-infor {
+  height: auto;
+  padding: 80px 0;
+  background: linear-gradient(0deg, #6f1ab6 -32.58%, #3d1766 91.5%),
+    linear-gradient(180deg, #3d1766 3.65%, #3d3992 58.49%, #6f1ab6 118.02%);
+  background-image: url("https://itapi.ondigitals.com/wp-content/uploads/2024/12/OD-contact-info.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2 {
+    div {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 40px;
+      text-align: left;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    &__left {
+      width: 57%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        &__title {
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 26px;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          color: #fff;
+          gap: 8px;
+        }
+        &__detail {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          color: #fff;
+          padding-left: 30px;
+        }
+      }
+    }
+    &__right {
+      width: 40%;
+      border-radius: 24px;
+      overflow: hidden;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .section-contact-infor {
+    height: auto;
+    padding: 50px 0;
+    h2{
+      div{
+        text-align: center;
+      }
+    }
+    &__content {
+      flex-wrap: wrap;
+      gap: 50px;
+      &__left {
+        width: 100%;
+        &__item {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          &__title {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 26px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            gap: 8px;
+          }
+          &__detail {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: #fff;
+            padding-left: 30px;
+          }
+        }
+      }
+      &__right {
+        width: 100%;
+      }
+    }
+  }
+}

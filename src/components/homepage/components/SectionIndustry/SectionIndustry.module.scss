@@ -1,0 +1,13 @@
+.section-industry {
+  height: auto;
+  padding: 50px 0;
+  background: linear-gradient(180deg, #3d3992 0%, #3d1766 90.81%);
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    h2{
+        text-align: center;
+    }
+  }
+}

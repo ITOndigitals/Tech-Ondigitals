@@ -1,0 +1,87 @@
+.list-card {
+  display: flex;
+  column-gap: 18px;
+  row-gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 24px;
+    background-color: transparent;
+    width: 32%;
+    transition: all 0.3s ease;
+    &__title {
+      display: flex;
+      gap: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      color: #fff;
+      align-items: center;
+      &__open {
+        svg {
+          rotate: 180deg;
+          margin-bottom: -5px;
+          margin-left: 10px;
+        }
+      }
+    }
+    &__desc {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      color: #fff;
+    }
+    &__desc-open {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      color: #fff;
+      height: auto;
+      opacity: 1;
+    }
+    &__desc-closed {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      display: none;
+      flex-direction: column;
+      gap: 8px;
+      color: #fff;
+      height: 0px;
+      opacity: 0;
+    }
+    &:hover {
+      background: linear-gradient(180deg, #3d1766 56.02%, #000000 141.81%);
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .list-card {
+    &__item {
+      width: 47%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .list-card {
+    &__item {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}

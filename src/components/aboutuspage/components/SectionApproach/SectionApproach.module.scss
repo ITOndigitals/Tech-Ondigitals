@@ -1,0 +1,32 @@
+.section-approach {
+  padding: 80px 0;
+  height: auto;
+  background: linear-gradient(
+    180deg,
+    #3d1766 0%,
+    #3d3992 41.79%,
+    #3d1766 101.93%
+  );
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__content {
+    &__card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      row-gap: 30px;
+      column-gap: 15px;
+      &__item {
+        width: 49%;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .section-approach__content__card__item {
+    width: 100%;
+  }
+}

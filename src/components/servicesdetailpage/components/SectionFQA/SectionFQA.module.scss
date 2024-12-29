@@ -1,0 +1,134 @@
+.SectionFQA {
+  padding: 80px 0;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+      color: #85c2ff;
+      text-align: center;
+    }
+    &__title {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 36px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    &__list-item {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      &__detail {
+        padding: 16px 0;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        ol {
+          list-style: decimal;
+          margin-left: 30px;
+        }
+        ul {
+          list-style: inside;
+          margin-left: 10px;
+          margin-bottom: 10px;
+        }
+        p {
+          margin-bottom: 10px;
+        }
+        &__title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 28px;
+          color: #fff;
+          &__icon {
+            &__turn {
+              svg {
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+        &__desc {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          margin-top: 10px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .SectionFQA {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      h2 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        color: #85c2ff;
+        text-align: center;
+      }
+      &__title {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36px;
+        color: #ffffff;
+        text-align: center;
+      }
+      &__list-item {
+        &__detail {
+          padding: 16px 0;
+          border-top: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+          &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2 {
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 28px;
+            }
+            &__icon {
+              &__turn {
+                svg {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+          &__desc {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .SectionFQA {
+    padding: 40px 0;
+  }
+}

@@ -1,0 +1,44 @@
+.section-achievement {
+  background-image: url("https://itapi.ondigitals.com/wp-content/uploads/2024/12/Achievements-bg-about-us.png");
+  padding: 80px 0;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2 {
+    text-align: center;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    &__title {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 36px;
+      text-align: center;
+      color: #fff;
+    }
+    &__USP-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      width: 100%;
+      &__item {
+        width: 25%;
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .section-achievement__content__USP-list__item {
+    width: 45%;
+  }
+}
+@media (max-width: 450px) {
+  .section-achievement__content__USP-list__item {
+    width: 100%;
+  }
+}

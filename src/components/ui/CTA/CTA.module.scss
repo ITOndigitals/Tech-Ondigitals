@@ -1,0 +1,60 @@
+.cta {
+  background-image: url("https://itapi.ondigitals.com/wp-content/uploads/2024/12/CTA-bg.png");
+  padding: 120px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left {
+      width: 70%;
+      &__text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #fff;
+      }
+    }
+    &__right {
+      width: 25%;
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .cta {
+    &__content {
+      flex-direction: column;
+      gap: 30px;
+      &__left {
+        width: 100%;
+        text-align: center;
+      }
+      &__right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .cta {
+    padding: 40px 0;
+    &__content {
+      &__left {
+        div {
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 36px;
+        }
+      }
+      &__right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
