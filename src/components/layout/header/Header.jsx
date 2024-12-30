@@ -54,67 +54,75 @@ export default function Header() {
     setShowMenu((old) => !old);
   };
   useEffect(() => {
-      const closeMenu = () => setShowMenu(false);
-      router.events.on("routeChangeStart", closeMenu);
-      return () => router.events.off("routeChangeStart", closeMenu);
-  }, [router]);
+    const closeMenu = () => {
+      setShowMenu(false);
+    };
+    router.events.on("routeChangeStart", closeMenu);
+
+    return () => {
+      router.events.off("routeChangeStart", closeMenu);
+    };
+  }, [router.events]);
+
   return (
     <>
-      <div
-        className={`${classes["menu-mobile"]} ${
-          showMenu ? classes["show-menu-mobile"] : ""
-        }`}
-      >
-        <div className={classes["menu-mobile__content"]}>
-          <Link
-            className={classes["menu-mobile__content__link"]}
-            href={"/about-us"}
-          >
-            <p>About us</p>
-          </Link>
-          <div className={classes["menu-mobile__content__subLink"]}>
-            <div className={classes["menu-mobile__content__link"]}>
-              <p>Services</p>
+      {showMenu && (
+        <div
+          className={`${classes["menu-mobile"]} ${
+            showMenu ? classes["show-menu-mobile"] : ""
+          }`}
+        >
+          <div className={classes["menu-mobile__content"]}>
+            <Link
+              className={classes["menu-mobile__content__link"]}
+              href={"/about-us"}
+            >
+              <p>About us</p>
+            </Link>
+            <div className={classes["menu-mobile__content__subLink"]}>
+              <div className={classes["menu-mobile__content__link"]}>
+                <p>Services</p>
+              </div>
+              <ul style={{ fontFamily: MavenPro.style.fontFamily }}>
+                <li>
+                  <Link href={"/website-design-services"}>Web Design</Link>
+                </li>
+                <li>
+                  <Link href={"/mobile-app-development-services"}>
+                    Mobile Development
+                  </Link>
+                </li>
+                <li>
+                  <Link href={"/software-development-services"}>
+                    Software Development
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <ul style={{ fontFamily: MavenPro.style.fontFamily }}>
-              <li>
-                <Link href={"/website-design-services"}>Web Design</Link>
-              </li>
-              <li>
-                <Link href={"/mobile-app-development-services"}>
-                  Mobile Development
-                </Link>
-              </li>
-              <li>
-                <Link href={"/software-development-services"}>
-                  Software Development
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <ButtonIcon href="/contact" />
-          <Link
-            className={classes["menu-mobile__content__email"]}
-            target="_blank"
-            href={"mailto:contact@ondigitals.com"}
-          >
-            contact@ondigitals.com
-          </Link>
-          <div className={classes["menu-mobile__content__icon-social"]}>
-            {listIconSocial &&
-              listIconSocial.map((item) => (
-                <Link
-                  target="_blank"
-                  rel="nofollow"
-                  key={item.id}
-                  href={item?.slug || "/"}
-                >
-                  {item.icon}
-                </Link>
-              ))}
+            <ButtonIcon href="/contact" />
+            <Link
+              className={classes["menu-mobile__content__email"]}
+              target="_blank"
+              href={"mailto:contact@ondigitals.com"}
+            >
+              contact@ondigitals.com
+            </Link>
+            <div className={classes["menu-mobile__content__icon-social"]}>
+              {listIconSocial &&
+                listIconSocial.map((item) => (
+                  <Link
+                    target="_blank"
+                    rel="nofollow"
+                    key={item.id}
+                    href={item?.slug || "/"}
+                  >
+                    {item.icon}
+                  </Link>
+                ))}
+            </div>
           </div>
         </div>
-      </div>
+      )}
       <header
         className={classes["header"]}
         style={{
