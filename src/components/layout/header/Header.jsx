@@ -54,12 +54,10 @@ export default function Header() {
     setShowMenu((old) => !old);
   };
   useEffect(() => {
-    if (isMobile) {
       const closeMenu = () => setShowMenu(false);
       router.events.on("routeChangeStart", closeMenu);
       return () => router.events.off("routeChangeStart", closeMenu);
-    }
-  }, [router, isMobile]);
+  }, [router]);
   return (
     <>
       <div
