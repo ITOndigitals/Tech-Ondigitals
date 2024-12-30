@@ -75,12 +75,12 @@ export default function SectionForm({ data }) {
               secondaryTextColor={"text-white"}
             />
           </h2>
-          <p
+          <h1
             style={{ fontFamily: MavenPro.style.fontFamily }}
             className={classes["contact-section__columLeft__desc"]}
           >
             {title && title}
-          </p>
+          </h1>
         </div>
 
         <div className={classes["contact-section__columRight"]}>

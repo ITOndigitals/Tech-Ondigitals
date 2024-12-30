@@ -19,7 +19,7 @@ export default function SectionHero({ data }) {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           />
         </div>
-        <p className={classes["section-hero__title"]}>{title && title}</p>
+        <h1 className={classes["section-hero__title"]}>{title && title}</h1>
       </div>
     </section>
   );

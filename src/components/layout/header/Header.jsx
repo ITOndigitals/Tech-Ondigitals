@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/Icons/ListIcon";
 import { Maven_Pro } from "next/font/google";
 import useMediaQuery from "@/hooks/useMediaQuery";
+import { useRouter } from "next/router";
 
 const MavenPro = Maven_Pro({ subsets: ["latin", "vietnamese"] });
 const listIconSocial = [
@@ -48,9 +49,17 @@ export default function Header() {
   const [isHovered, setIsHovered] = useState(false);
   const isMobile = useMediaQuery(767);
   const [showMenu, setShowMenu] = useState(false);
+  const router = useRouter();
   const changeShowMenu = () => {
     setShowMenu((old) => !old);
   };
+  useEffect(() => {
+    if (isMobile) {
+      const closeMenu = () => setShowMenu(false);
+      router.events.on("routeChangeStart", closeMenu);
+      return () => router.events.off("routeChangeStart", closeMenu);
+    }
+  }, [router, isMobile]);
   return (
     <>
       <div
@@ -74,10 +83,14 @@ export default function Header() {
                 <Link href={"/website-design-services"}>Web Design</Link>
               </li>
               <li>
-                <Link href={"/mobile-app-development-services"}>Mobile Development</Link>
+                <Link href={"/mobile-app-development-services"}>
+                  Mobile Development
+                </Link>
               </li>
               <li>
-                <Link href={"/software-development-services"}>Software Development</Link>
+                <Link href={"/software-development-services"}>
+                  Software Development
+                </Link>
               </li>
             </ul>
           </div>
@@ -119,7 +132,7 @@ export default function Header() {
             >
               <Image
                 src={"/IT.png"}
-                alt=""
+                alt="logo"
                 fill
                 style={{ objectFit: "cover" }}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
@@ -153,13 +166,19 @@ export default function Header() {
                     {isHovered && (
                       <ul>
                         <li>
-                          <Link href={"/website-design-services"}>Web Design</Link>
+                          <Link href={"/website-design-services"}>
+                            Web Design
+                          </Link>
                         </li>
                         <li>
-                          <Link href={"/mobile-app-development-services"}>Mobile Development</Link>
+                          <Link href={"/mobile-app-development-services"}>
+                            Mobile Development
+                          </Link>
                         </li>{" "}
                         <li>
-                          <Link href={"/software-development-services"}>Software Development</Link>
+                          <Link href={"/software-development-services"}>
+                            Software Development
+                          </Link>
                         </li>
                       </ul>
                     )}
