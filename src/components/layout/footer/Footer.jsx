@@ -40,7 +40,12 @@ const Footer = () => {
     <footer className={classes["main"]}>
       <div className={classes["container"]}>
         <Link href={"/"} className={classes["image-container"]}>
-          <Image src="/Footer_logo.png" fill alt="website logo" />
+          <Image
+            src="/Footer_logo.png"
+            fill
+            alt="website logo"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+          />
         </Link>
         <div className={classes["text"]}>
           Your trusted enterprise IT development company
@@ -53,7 +58,10 @@ const Footer = () => {
           <div className={classes["title"]}>Office:</div>
           <ul>
             <li>
-              <Link target="_blank" href="https://www.google.com/maps/place/Digital+Marketing+Agency+-+On+Digitals/@10.7621819,106.691325,15z/data=!4m6!3m5!1s0x31752f3528168587:0xb88ddea7383b07dc!8m2!3d10.7621819!4d106.691325!16s%2Fg%2F11j7ygb01k?entry=ttu">
+              <Link
+                target="_blank"
+                href="https://www.google.com/maps/place/Digital+Marketing+Agency+-+On+Digitals/@10.7621819,106.691325,15z/data=!4m6!3m5!1s0x31752f3528168587:0xb88ddea7383b07dc!8m2!3d10.7621819!4d106.691325!16s%2Fg%2F11j7ygb01k?entry=ttu"
+              >
                 7th floor, 75 Ho Hao Hon, Co Giang Ward, District 1, Ho Chi Minh
                 City
               </Link>
@@ -65,7 +73,9 @@ const Footer = () => {
           <div className={classes["title"]}>Contact:</div>
           <ul>
             <li>
-              <Link target="_blank" href="tel:0906648177">Hotline: 0906648177</Link>
+              <Link target="_blank" href="tel:0906648177">
+                Hotline: 0906648177
+              </Link>
             </li>
             <li>
               <Link target="_blank" href="mailto:contact@ondigitals.com">

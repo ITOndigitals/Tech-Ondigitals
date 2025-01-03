@@ -12,10 +12,10 @@ export default function HighlightedText({
     <div className={classes["highlight"]}>
       {isCharacter ? (
         <>
-          <span className={`${primaryTextColor} text-stroke`}>{"< "}</span>
+          <span className={`text-stroke`}>{"< "}</span>
           <span className={`${primaryTextColor}`}>{primaryText}</span>{" "}
           <span className={`${secondaryTextColor}`}>{secondaryText}</span>
-          <span className={`${primaryTextColor} text-stroke`}>{" />"}</span>
+          <span className={`text-stroke`}>{" />"}</span>
         </>
       ) : (
         <>

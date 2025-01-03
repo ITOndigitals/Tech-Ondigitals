@@ -16,7 +16,7 @@ export default function ListCardTechnology({ data }) {
             <div key={index} className={classes["list-card__main__image"]}>
               <Image
                 src={item?.sourceUrl}
-                alt={""}
+                alt={title || "Logo tech"}
                 fill
                 style={{ objectFit: "cover" }}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"

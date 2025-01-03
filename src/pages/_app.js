@@ -19,13 +19,15 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {isLoading && <LoadingSpinnerOverlay />}
-      <ApolloProvider client={client}>
-        <div className={fixelFont.className}>
-          <Header />
-          <Component {...pageProps} />
-          <Footer />
-        </div>
-      </ApolloProvider>
+      {!isLoading && (
+        <ApolloProvider client={client}>
+          <div className={fixelFont.className}>
+            <Header />
+            <Component {...pageProps} />
+            <Footer />
+          </div>
+        </ApolloProvider>
+      )}
     </>
   );
 }

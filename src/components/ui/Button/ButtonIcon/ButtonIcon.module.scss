@@ -15,12 +15,23 @@
     font-weight: 600;
     line-height: 24px;
     color: #fff;
+    animation: blinkEffect 2s linear 0s infinite normal;
   }
-  svg{
+  svg {
     padding-bottom: 3px;
-
   }
   &:hover {
     background: linear-gradient(90deg, #551717 0%, #ff0032 49%, #551717 100%);
+  }
+}
+@keyframes blinkEffect {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

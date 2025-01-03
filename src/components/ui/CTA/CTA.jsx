@@ -13,6 +13,7 @@ export default function CTA() {
               secondaryText={"DIGITAL TRANSFORMATION today"}
               primaryTextColor={"text-stroke"}
               secondaryTextColor={"text-white"}
+              isCharacter={false}
             />
             <p className={classes["cta__content__left__text"]}>
               Tell us about your business challenge and get a tailored

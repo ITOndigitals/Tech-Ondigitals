@@ -15,6 +15,7 @@ export default function SectionIndustries({ data }) {
               secondaryText={"INDUSTRIES we serve"}
               primaryTextColor={"text-stroke"}
               secondaryTextColor={"text-white"}
+              isCharacter={false}
             />
           </h2>
           <div className={classes["section-industries__content__card"]}>

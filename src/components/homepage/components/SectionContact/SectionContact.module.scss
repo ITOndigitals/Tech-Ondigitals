@@ -1,5 +1,5 @@
 .section-contact-form {
-  background: url("https://itapi.ondigitals.com/wp-content/uploads/2024/12/Contact-us-homepage.png");
+  background: url("https://itapi.ondigitals.com/wp-content/uploads/2024/12/Contact-us-background.png");
   height: auto;
   padding: 50px 0;
   background-position: center;
@@ -56,7 +56,7 @@
       flex-wrap: wrap;
       &__text {
         color: #fff;
-        font-size: 12px;
+        font-size: 13px;
         font-style: normal;
         font-weight: 400;
         line-height: 16px;
@@ -157,7 +157,7 @@
       }
     }
   }
-  .contact-section__columRight__form__buttonAndNote--btn__textpolicy{
+  .contact-section__columRight__form__buttonAndNote--btn__textpolicy {
     justify-content: center;
   }
 }

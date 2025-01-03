@@ -17,6 +17,7 @@ export default function SectionHero({ data }) {
             fill
             style={{ objectFit: "contain" }}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+            priority
           />
         </div>
         <h1 className={classes["section-hero__title"]}>{title && title}</h1>

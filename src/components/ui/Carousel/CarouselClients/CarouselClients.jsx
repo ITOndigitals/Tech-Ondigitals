@@ -41,7 +41,7 @@ export default function CarouselClients({ data }) {
               <div className={classes["image"]}>
                 <Image
                   src={item?.sourceUrl}
-                  alt="/"
+                  alt="Logo client"
                   fill
                   style={{ objectFit: "cover" }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"

@@ -204,7 +204,7 @@ export const getDataAboutUsPage = async (id) => {
         listOurTechnology {
           listTechnologyDetail {
             title
-            listImage {
+            listImage(first: 100) {
               nodes {
                 altText
                 sourceUrl
