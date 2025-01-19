@@ -3,10 +3,10 @@ export default function replaceUrlsHead(fullHead) {
   return fullHead
     .replace(
       /<link\s+rel="canonical"\s+href="https:\/\/itapi\.ondigitals\.com([^"]*)"/g,
-      '<link rel="canonical" href="https://it.ondigitals.com$1"'
+      '<link rel="canonical" href="https://tech.ondigitals.com$1"'
     )
     .replace(
       /<meta\s+property="og:url"\s+content="https:\/\/itapi\.ondigitals\.com([^"]*)"/g,
-      '<meta property="og:url" content="https://it.ondigitals.com$1"'
+      '<meta property="og:url" content="https://tech.ondigitals.com$1"'
     );
 }

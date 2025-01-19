@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://it.ondigitals.com/", // Thay bằng URL website của bạn
+  siteUrl: "https://tech.ondigitals.com/", // Thay bằng URL website của bạn
   generateRobotsTxt: true, // Tạo file robots.txt
   changefreq: "daily", // Tần suất cập nhật
   priority: 0.8, // Để null để cấu hình từng trang

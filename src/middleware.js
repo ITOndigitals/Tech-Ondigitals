@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 export function middleware(request) {
-  const targetHost = "it.ondigitals.com";
+  const targetHost = "tech.ondigitals.com";
   const host = request.headers.get("host");
   const protocol = request.headers.get("x-forwarded-proto") || "http"; // Sử dụng header "x-forwarded-proto" để xác định giao thức nếu bạn đang sử dụng proxy
   // Kiểm tra nếu giao thức không phải HTTPS hoặc host có tiền tố www
