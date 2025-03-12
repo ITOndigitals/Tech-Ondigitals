@@ -5,6 +5,7 @@ import usePageLoading from "@/hooks/usePageLoading";
 import "@/styles/globals.css";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import localFont from "next/font/local";
+import Head from "next/head";
 const fixelFont = localFont({
   src: "./fonts/FixelVariable.ttf",
   display: "swap",
@@ -21,6 +22,22 @@ export default function App({ Component, pageProps }) {
       {isLoading && <LoadingSpinnerOverlay />}
       {!isLoading && (
         <ApolloProvider client={client}>
+          <Head>
+            <script
+              async
+              src="https://www.googletagmanager.com/gtag/js?id=G-XW0FYLXMC7"
+            ></script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XW0FYLXMC7');
+          `,
+              }}
+            />
+          </Head>
           <div className={fixelFont.className}>
             <Header />
             <Component {...pageProps} />
