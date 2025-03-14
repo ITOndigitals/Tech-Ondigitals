@@ -78,13 +78,13 @@ export default function CardIndustry({ data }) {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
                   />
                 </div>
-                <p
+                <h3
                   className={
                     classes["card-industry-mobile__item__detail__title"]
                   }
                 >
                   {item.title && item.title}
-                </p>
+                </h3>
                 <DownNavIcon width={"24"} height={"24"} color={"#fff"} />
               </div>
               <div
@@ -121,9 +121,9 @@ export default function CardIndustry({ data }) {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
                 />
               </div>
-              <p className={classes["card-industry__item__title"]}>
+              <h3 className={classes["card-industry__item__title"]}>
                 {item.title && item.title}
-              </p>
+              </h3>
               <div className={classes["card-industry__item__desc"]}>
                 {item.description && parse(item.description)}
               </div>

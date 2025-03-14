@@ -20,9 +20,9 @@ export default function CardUSP({ data }) {
         />
       </div>
       <div className={classes["card-usp__content"]}>
-        <p className={classes["card-usp__content__title"]}>
+        <h3 className={classes["card-usp__content__title"]}>
           {titleUsp && titleUsp}
-        </p>
+        </h3>
         <div
           style={{ fontFamily: MavenPro.style.fontFamily }}
           className={classes["card-usp__content__desc"]}

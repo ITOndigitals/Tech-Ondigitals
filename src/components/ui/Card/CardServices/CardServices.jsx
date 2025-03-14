@@ -26,12 +26,14 @@ export default function CardServices({ data }) {
         />
       </Link>
       <div className={classes["card-services__content"]}>
-        <Link
-          href={button?.url || "/"}
-          className={classes["card-services__content__title"]}
-        >
-          {titleServices && titleServices}
-        </Link>
+        <h3>
+          <Link
+            href={button?.url || "/"}
+            className={classes["card-services__content__title"]}
+          >
+            {titleServices && titleServices}
+          </Link>
+        </h3>
         {descriptionServices && (
           <div
             style={{ fontFamily: MavenPro.style.fontFamily }}
@@ -40,7 +42,7 @@ export default function CardServices({ data }) {
             {parse(descriptionServices)}
           </div>
         )}
-        <div  className={classes["card-services__content__link"]}>
+        <div className={classes["card-services__content__link"]}>
           <ButtonCircle href={button?.url} text={button?.title} />
         </div>
       </div>
