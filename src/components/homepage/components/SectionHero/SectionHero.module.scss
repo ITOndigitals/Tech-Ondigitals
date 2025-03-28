@@ -31,8 +31,12 @@
 }
 @media (max-width: 640px) {
   .hero-section {
+    height: auto;
+    padding: 130px 0;
     &-headline {
       text-align: center;
+      font-size: 44px;
+      line-height: 48px;
     }
     &__image {
       width: 100%;
