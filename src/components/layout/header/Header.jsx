@@ -85,7 +85,9 @@ export default function Header() {
               </div>
               <ul style={{ fontFamily: MavenPro.style.fontFamily }}>
                 <li>
-                  <Link href={"/website-design-services"}>Web Design</Link>
+                  <Link href={"/website-design-services"}>
+                    Ecommerce Design
+                  </Link>
                 </li>
                 <li>
                   <Link href={"/mobile-app-development-services"}>
@@ -173,7 +175,7 @@ export default function Header() {
                       <ul>
                         <li>
                           <Link href={"/website-design-services"}>
-                            Web Design
+                            Ecommerce Design
                           </Link>
                         </li>
                         <li>

@@ -11,7 +11,7 @@ export default function SectionServices({ data }) {
           <h2>
             <HighlightedText
               primaryText="Our"
-              secondaryText="services"
+              secondaryText="IT services"
               primaryTextColor="text-stroke"
               secondaryTextColor="text-white"
             />

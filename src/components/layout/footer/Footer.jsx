@@ -14,30 +14,28 @@ const socialLinks = [
     Icon: FacebookIcon,
     width: 24,
     height: 24,
-    title:"ON TECH On Facebook"
+    title: "ON TECH On Facebook",
   },
   {
     href: "https://www.instagram.com/ondigitals",
     Icon: InstagramIcon,
     width: 24,
     height: 24,
-    title:"ON TECH On Instagram"
-
+    title: "ON TECH On Instagram",
   },
   {
     href: "https://www.linkedin.com/company/on-digitals/",
     Icon: LinkedIcon,
     width: 24,
     height: 24,
-    title:"ON TECH On Linkedin"
+    title: "ON TECH On Linkedin",
   },
   {
     href: "https://zalo.me/4436409039049370507",
     Icon: IconZalo,
     width: 54,
     height: 18,
-    title:"ON TECH On Zalo"
-
+    title: "ON TECH On Zalo",
   },
 ];
 
@@ -95,7 +93,7 @@ const Footer = () => {
             <div className={classes["title"]}>IT Services:</div>
             <ul>
               <li>
-                <Link href="/website-design-services">Website Design</Link>
+                <Link href="/website-design-services">Ecommerce Design</Link>
               </li>
               <li>
                 <Link href="/mobile-app-development-services">
