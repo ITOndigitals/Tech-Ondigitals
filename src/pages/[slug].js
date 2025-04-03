@@ -46,7 +46,7 @@ export const getStaticProps = async (context) => {
       props: {
         data,
       },
-      revalidate: 86400, // Tự động cập nhật dữ liệu sau mỗi 24 giờ
+      revalidate: 3600, // Tự động cập nhật dữ liệu sau mỗi 24 giờ
     };
   } catch (error) {
     console.error("Error fetching data:", error);
