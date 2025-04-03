@@ -93,7 +93,7 @@ const Footer = () => {
             <div className={classes["title"]}>IT Services:</div>
             <ul>
               <li>
-                <Link href="/website-design-services">Ecommerce Design</Link>
+                <Link href="/ecommerce-design-services">Ecommerce Design</Link>
               </li>
               <li>
                 <Link href="/mobile-app-development-services">

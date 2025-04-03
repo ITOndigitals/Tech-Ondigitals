@@ -85,7 +85,7 @@ export default function Header() {
               </div>
               <ul style={{ fontFamily: MavenPro.style.fontFamily }}>
                 <li>
-                  <Link href={"/website-design-services"}>
+                  <Link href={"/ecommerce-design-services"}>
                     Ecommerce Design
                   </Link>
                 </li>
@@ -174,7 +174,7 @@ export default function Header() {
                     {isHovered && (
                       <ul>
                         <li>
-                          <Link href={"/website-design-services"}>
+                          <Link href={"/ecommerce-design-services"}>
                             Ecommerce Design
                           </Link>
                         </li>
