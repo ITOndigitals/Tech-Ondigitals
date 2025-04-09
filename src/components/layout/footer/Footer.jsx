@@ -77,11 +77,6 @@ const Footer = () => {
           <div className={classes["title"]}>Contact:</div>
           <ul>
             <li>
-              <Link target="_blank" href="tel:0906648177">
-                Hotline: 0906648177
-              </Link>
-            </li>
-            <li>
               <Link target="_blank" href="mailto:contact@ondigitals.com">
                 contact@ondigitals.com
               </Link>

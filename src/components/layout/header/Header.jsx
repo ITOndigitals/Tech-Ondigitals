@@ -102,13 +102,6 @@ export default function Header() {
               </ul>
             </div>
             <ButtonIcon href="/contact" />
-            <Link
-              className={classes["menu-mobile__content__email"]}
-              target="_blank"
-              href={"mailto:contact@ondigitals.com"}
-            >
-              contact@ondigitals.com
-            </Link>
             <div className={classes["menu-mobile__content__icon-social"]}>
               {listIconSocial &&
                 listIconSocial.map((item) => (
@@ -190,6 +183,21 @@ export default function Header() {
                         </li>
                       </ul>
                     )}
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.44141 9L12.4414 15L18.4414 9"
+                        stroke="white"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
                   <ButtonIcon href="/contact" />
                 </div>

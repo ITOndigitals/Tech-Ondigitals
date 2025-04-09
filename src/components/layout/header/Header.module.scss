@@ -109,6 +109,9 @@
         cursor: pointer;
         border: 2px solid transparent;
         transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 8px;
         ul {
           position: absolute;
           top: 45px;
@@ -135,7 +138,7 @@
         }
         &:hover{
           border: 2px solid #fff;
-
+         
         }
       }
     }

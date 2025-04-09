@@ -226,20 +226,7 @@ export default function CustomPage404() {
               <Link href={"/"}>Data Policy</Link>
             </div>
           </form>
-          <div className={classes["contact-section__columRight__email"]}>
-            <p
-              style={{ fontFamily: MavenPro.style.fontFamily }}
-              className={classes["contact-section__columRight__email__text"]}
-            >
-              For additional business inquiries, please contact us via email:
-            </p>
-            <a
-              href="mailto:contact@ondigitals.com"
-              className={classes["contact-section__columRight__email__address"]}
-            >
-              contact@ondigitals.com
-            </a>
-          </div>
+      
         </div>
       </div>
     </section>

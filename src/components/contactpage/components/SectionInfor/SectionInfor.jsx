@@ -50,28 +50,7 @@ export default function SectionInfor() {
                 City, Vietnam
               </p>
             </Link>
-            <Link
-              href={"tel:0906648177"}
-              target="_blank"
-              className={classes["section-contact-infor__content__left__item"]}
-            >
-              <div
-                className={
-                  classes["section-contact-infor__content__left__item__title"]
-                }
-              >
-                <IconPhone width={"24"} height={"24"} color={"#85C2FF"} />
-                <p>Hotline:</p>
-              </div>
-              <p
-                className={
-                  classes["section-contact-infor__content__left__item__detail"]
-                }
-                style={{ fontFamily: MavenPro.style.fontFamily }}
-              >
-                (+84)906648177
-              </p>
-            </Link>
+          
             <div
               className={classes["section-contact-infor__content__left__item"]}
             >
