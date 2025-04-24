@@ -25,6 +25,7 @@ const nextConfig = {
   sassOptions: {
     silenceDeprecations: ["legacy-js-api"],
   },
+  trailingSlash: true,
 };
 
 export default nextConfig;

@@ -52,6 +52,11 @@ export default function App({ Component, pageProps }) {
               `,
               }}
             />
+            <script
+              src="https://analytics.ahrefs.com/analytics.js"
+              data-key="hvmGSJyCbOExDkSNBkM97g"
+              async
+            ></script>
           </Head>
           <div className={fixelFont.className}>
             <Header />
