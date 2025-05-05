@@ -38,7 +38,6 @@ export default function SectionIntro({ data }) {
                   alt={title && title}
                   fill
                   style={{ objectFit: "contain" }}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
                 />
               </div>
             </div>
