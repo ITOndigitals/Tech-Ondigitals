@@ -130,7 +130,7 @@ export default function CustomPage404() {
               }
             /> */}
             <MesageTextarea
-              title={"Leave a request"}
+              title={"Leave a request (*)"}
               name="message"
               placeholder={"Write your request..."}
               onChange={formik.handleChange}
@@ -219,7 +219,6 @@ export default function CustomPage404() {
               <Link href={"/"}>Data Policy</Link>
             </div>
           </form>
-      
         </div>
       </div>
     </section>
