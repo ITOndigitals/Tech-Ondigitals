@@ -23,6 +23,7 @@ export default function App({ Component, pageProps }) {
       {!isLoading && (
         <ApolloProvider client={client}>
           <Head>
+            <meta name="yandex-verification" content="122ad0c23a837cc4" />
             <script
               async
               src="https://www.googletagmanager.com/gtag/js?id=G-XW0FYLXMC7"
